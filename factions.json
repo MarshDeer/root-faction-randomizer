@@ -1,0 +1,92 @@
+[
+	{
+		"factionName": "Marquise de Cat",
+		"factionReach": 10,
+		"factionColor": "#e07a37",
+		"factionLeader": "marquiseIcon.png",
+		"factionMeeple": "marquiseMeeple.png",
+		"factionBackground": "marquiseBack.png",
+		"factionExpansion": "Base Game"
+	}
+	,{
+		"factionName": "Eyrie Dynasties",
+		"factionReach": 7,
+		"factionColor": "#416eb0",
+		"factionLeader": "eyrieIcon.png",
+		"factionMeeple": "eyrieMeeple.png",
+		"factionBackground": "eyrieBack.png",
+		"factionExpansion": "Base Game"
+	}
+	,{
+		"factionName": "Woodland Alliance",
+		"factionReach": 3,
+		"factionColor": "#68b653",
+		"factionLeader": "allianceIcon.png",
+		"factionMeeple": "allianceMeeple.png",
+		"factionBackground": "allianceBack.png",
+		"factionExpansion": "Base Game"
+	}
+	,{
+		"factionName": "Vagabond",
+		"factionReach": 5,
+		"factionColor": "#6d6e70",
+		"factionLeader": "vagabondIcon.png",
+		"factionMeeple": "vagabondMeeple.png",
+		"factionBackground": "vagabondBack.png",
+		"factionExpansion": "Base Game"
+	}
+	,{
+		"factionName": "Lizard Cult",
+		"factionReach": 2,
+		"factionColor": "#fcf065",
+		"factionLeader": "cultIcon.png",
+		"factionMeeple": "cultMeeple.png",
+		"factionBackground": "cultBack.png",
+		"factionExpansion": "The Riverfolk Expansion"
+	}
+	,{
+		"factionName": "Riverfolk Company",
+		"factionReach": 5,
+		"factionColor": "#5bc3bd",
+		"factionLeader": "companyIcon.png",
+		"factionMeeple": "companyMeeple.png",
+		"factionBackground": "companyBack.png",
+		"factionExpansion": "The Riverfolk Expansion"
+	}
+	,{
+		"factionName": "Underground Duchy",
+		"factionReach": 8,
+		"factionColor": "#eec4ab",
+		"factionLeader": "duchyIcon.png",
+		"factionMeeple": "duchyMeeple.png",
+		"factionBackground": "duchyBack.png",
+		"factionExpansion": "The Underworld Expansion"
+	}
+	,{
+		"factionName": "Corvid Conspiracy",
+		"factionReach": 3,
+		"factionColor": "#925da5",
+		"factionLeader": "conspiracyIcon.png",
+		"factionMeeple": "conspiracyMeeple.png",
+		"factionBackground": "conspiracyBack.png",
+		"factionExpansion": "The Underworld Expansion"
+	}
+	,{
+		"factionName": "Lord of the Hundreds",
+		"factionReach": 9,
+		"factionColor": "#e11b3f",
+		"factionLeader": "lordIcon.png",
+		"factionMeeple": "lordMeeple.png",
+		"factionBackground": "lordBack.png",
+		"factionExpansion": "The Marauder Expansion"
+	}
+	,{
+		"factionName": "Keepers in Iron",
+		"factionReach": 8,
+		"factionColor": "#8b8d90",
+		"factionLeader": "keepersIcon.png",
+		"factionMeeple": "keepersMeeple.png",
+		"factionBackground": "keepersBack.png",
+		"factionExpansion": "The Marauder Expansion"
+	}
+]
