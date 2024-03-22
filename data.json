@@ -9,7 +9,7 @@
 				"factionColor": "#e07a37",
 				"factionLeader": "marquiseIcon.png",
 				"factionMeeple": "marquiseMeeple.png",
-				"factionBackground": "marquiseBack.png",
+				"factionBackground": "marquiseBack.png"
 			}
 			,{
 				"factionName": "Eyrie Dynasties",
@@ -17,7 +17,7 @@
 				"factionColor": "#416eb0",
 				"factionLeader": "eyrieIcon.png",
 				"factionMeeple": "eyrieMeeple.png",
-				"factionBackground": "eyrieBack.png",
+				"factionBackground": "eyrieBack.png"
 			}
 			,{
 				"factionName": "Woodland Alliance",
@@ -25,7 +25,7 @@
 				"factionColor": "#68b653",
 				"factionLeader": "allianceIcon.png",
 				"factionMeeple": "allianceMeeple.png",
-				"factionBackground": "allianceBack.png",
+				"factionBackground": "allianceBack.png"
 			}
 			,{
 				"factionName": "Vagabond",
@@ -33,7 +33,7 @@
 				"factionColor": "#6d6e70",
 				"factionLeader": "vagabondIcon.png",
 				"factionMeeple": "vagabondMeeple.png",
-				"factionBackground": "vagabondBack.png",
+				"factionBackground": "vagabondBack.png"
 			}
 		],
 		"expansionRiverfolk": [
@@ -43,7 +43,7 @@
 				"factionColor": "#fcf065",
 				"factionLeader": "cultIcon.png",
 				"factionMeeple": "cultMeeple.png",
-				"factionBackground": "cultBack.png",
+				"factionBackground": "cultBack.png"
 			}
 			,{
 				"factionName": "Riverfolk Company",
@@ -51,7 +51,7 @@
 				"factionColor": "#5bc3bd",
 				"factionLeader": "companyIcon.png",
 				"factionMeeple": "companyMeeple.png",
-				"factionBackground": "companyBack.png",
+				"factionBackground": "companyBack.png"
 			}
 		],
 		"expansionUnderworld": [
@@ -61,7 +61,7 @@
 				"factionColor": "#eec4ab",
 				"factionLeader": "duchyIcon.png",
 				"factionMeeple": "duchyMeeple.png",
-				"factionBackground": "duchyBack.png",
+				"factionBackground": "duchyBack.png"
 			}
 			,{
 				"factionName": "Corvid Conspiracy",
@@ -69,7 +69,7 @@
 				"factionColor": "#925da5",
 				"factionLeader": "conspiracyIcon.png",
 				"factionMeeple": "conspiracyMeeple.png",
-				"factionBackground": "conspiracyBack.png",
+				"factionBackground": "conspiracyBack.png"
 			}
 		],
 		"expansionMarauder": [
@@ -93,4 +93,5 @@
 			}
 		]
 	}
+
 }
