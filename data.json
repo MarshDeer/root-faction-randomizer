@@ -1,26 +1,6 @@
 {
-	"players": [
-		{
-			"partySize": 2,
-			"partyReach": 17
-		}
-		,{
-			"partySize": 3,
-			"partyReach": 18
-		}
-		,{
-			"partySize": 4,
-			"partyReach": 21
-		}
-		,{
-			"partySize": 5,
-			"partyReach": 25
-		}
-		,{
-			"partySize": 6,
-			"partyReach": 28
-		}
-	],
+	"viableReach": [ 17, 18, 21, 25, 28 ],
+
 	"factions": [
 		{
 			"factionName": "Marquise de Cat",
