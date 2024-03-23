@@ -12,7 +12,7 @@ fetchData();
 
 function initPool() { // TODO: Make this not look like it was written by yanderedev
 	arrayPool = [];
-	arrayPool = JSON.parse(JSON.stringify(arrayExpansions.expansionBase)); // making sure not to copy this shit by reference
+	arrayPool = JSON.parse(JSON.stringify(arrayExpansions.expansionBase));
 	if (document.getElementById("expansionRiverfolk").checked) {
 		arrayPool = arrayPool.concat(arrayExpansions.expansionRiverfolk);
 	}
@@ -34,7 +34,7 @@ function rollFactions() {
 	while (arraySelected.length < playerCount) {
 		let rand = Math.floor(Math.random() * arrayPool.length);
 		reachSum = reachSum + arrayPool[rand].factionReach;
-		arraySelected.push(Object.assign({}, arrayPool[rand])); // making sure it doesn't copy by value
+		arraySelected.push(Object.assign({}, arrayPool[rand]));
 		if (arrayPool[rand].factionName == "Vagabond" && arrayPool[rand].factionReach == 5) {
 			arrayPool[rand].factionReach = 2;
 		} else {
@@ -47,10 +47,6 @@ function rollFactions() {
 		rollFactions();
 	}
 
-	// TODO: remove debug
-	console.log('Final Reach: ', reachSum, '/', reachViable);
-	console.log('Final Factions: ', arraySelected);
-
 	for(let len = arraySelected.length - 1; len > 0; len--) {
 		const ind = Math.floor(Math.random() * (len + 1));
 		[arraySelected[len], arraySelected[ind]] = [arraySelected[ind], arraySelected[len]];
@@ -58,7 +54,7 @@ function rollFactions() {
 
 	let n = 0;
 	while (n < arraySelected.length) {
-		console.log('Player ', n + 1, ': ', arraySelected[n])
+		console.log('Player ', n + 1, ': ', arraySelected[n].factionName)
 		n++
 	}
 }
