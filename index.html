@@ -1,0 +1,55 @@
+<html lang="en">
+	<head>
+		<!-- Meta -->
+			<title>Root Faction Randomizer</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="theme-color" media="(prefers-color-scheme:light)" content="#f3e2bf">
+			<meta name="theme-color" media="(prefers-color-scheme:dark)" content="#393f3b">
+		<!-- Favicon -->
+			<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+			<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<!-- Embed -->
+			<meta property="twitter:card" content="summary_large_image">
+			<meta property="og:image" content="embed.png">
+		<!-- CSS -->
+			<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body>
+		<h1> Root Faction Randomizer (WIP) </h1>
+
+		<section>
+			<h2> Amount of Players </h2>
+			<select id="playerCount">
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4" selected="selected">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</select>
+		</section>
+
+		<section>
+			<h2> Expansions </h2>
+			<table>
+				<tr><td>base</td> <td><input type="checkbox" id="expansionBase" checked disabled> </td></tr>
+				<tr><td>river</td> <td><input type="checkbox" id="expansionRiverfolk" checked></td></tr>
+				<tr><td>underworld</td> <td><input type="checkbox" id="expansionUnderworld" checked></td></tr>
+				<tr><td>marauder</td> <td><input type="checkbox" id="expansionMarauder" checked> </td></tr>
+			</table>
+			<button onclick=rollFactions()>Roll</button>
+		</section>
+
+		<section>
+			<h2> Output </h2>
+			<p>
+				check the console asshole
+			</p>
+		</section>
+
+		<script src="calc.js"></script>
+	</body>
+</html>
