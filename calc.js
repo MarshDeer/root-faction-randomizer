@@ -24,6 +24,13 @@ function initPool() { // TODO: There must be a less dumb way to do this
 	}
 }
 
+function roll() {
+	rollFactions();
+	drawFactions();
+	rollPlayers();
+	drawPlayers();
+}
+
 function rollFactions() {
 	initPool();
 	let playerCount = document.querySelector("input[type=radio][name=playerCount]:checked").value;
@@ -46,14 +53,26 @@ function rollFactions() {
 		console.log('Reach too low; retrying...');
 		rollFactions();
 	} else {
-		drawFactions();
 		return;
 	}
 }
 
 function drawFactions() {
-	for(let ind = 0; ind < arraySelected.length - 1; ind++) {
-		// TODO: Draw factions function
+	const area = document.getElementById("selectedFactions");
+	area.style.gridTemplateColumns = "repeat(" + arraySelected.length +", 1fr)";
+	area.innerHTML = "";
+
+	for(let cursor = 0; cursor < arraySelected.length; cursor++) {
+		let card = document.createElement('article');
+		card.classList.add(arraySelected[cursor].factionShortname);
+		card.style.setProperty("--i", cursor);
+		let cardImage = document.createElement('img');
+		cardImage.src = "assets/factions/" + arraySelected[cursor].factionShortname + "/leader.png";
+		card.appendChild(cardImage);
+		let cardTitle = document.createElement('h4');
+		cardTitle.textContent = arraySelected[cursor].factionName;
+		card.appendChild(cardTitle);
+		area.appendChild(card);
 	}
 }
 
@@ -62,18 +81,27 @@ function rollPlayers() {
 		const ind = Math.floor(Math.random() * (len + 1));
 		[arraySelected[len], arraySelected[ind]] = [arraySelected[ind], arraySelected[len]];
 	}
-	drawPlayers();
-
-	let n = 0;
-	while (n < arraySelected.length) {
-		console.log('Player ', n + 1, ': ', arraySelected[n].factionName)
-		n++
-	}
 }
 
 function drawPlayers() {
-	for(let ind = 0; ind < arraySelected.length - 1; ind++) {
-		// TODO: Draw players function
+	const area = document.getElementById("assignedPlayers");
+	area.style.gridTemplateColumns = "repeat(" + arraySelected.length +", 1fr)";
+	area.innerHTML = "";
+	let playerNumber = 0;
+
+	for(let cursor = 0; cursor < arraySelected.length; cursor++) {
+		playerNumber++
+		let animationDelay = arraySelected.length + playerNumber;
+		let player = document.createElement('article');
+		player.classList.add(arraySelected[cursor].factionShortname);
+		player.style.setProperty("--i", animationDelay);
+		let playerLegend = document.createElement('h4');
+		playerLegend.textContent = "Player " + playerNumber;
+		player.appendChild(playerLegend);
+		let playerMeeple = document.createElement('img');
+		playerMeeple.src = "assets/factions/" + arraySelected[cursor].factionShortname + "/meeple.png";
+		player.appendChild(playerMeeple);
+		area.appendChild(player);
 	}
 
 }
