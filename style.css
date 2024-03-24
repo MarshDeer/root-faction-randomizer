@@ -263,6 +263,7 @@
 
 		#assignedPlayers article img {
 			width: 50%;
+			max-width: 7vw; /* TODO: less hacky solution */
 			display: block;
 			margin: auto;
 		}
