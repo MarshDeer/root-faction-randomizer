@@ -10,7 +10,7 @@ function fetchData() {
 }
 fetchData();
 
-function initPool() { // TODO: Make this not look like it was written by yanderedev
+function initPool() { // TODO: There must be a less dumb way to do this
 	arrayPool = [];
 	arrayPool = JSON.parse(JSON.stringify(arrayExpansions.expansionBase));
 	if (document.getElementById("expansionRiverfolk").checked) {
@@ -26,7 +26,7 @@ function initPool() { // TODO: Make this not look like it was written by yandere
 
 function rollFactions() {
 	initPool();
-	let playerCount = document.getElementById("playerCount").value;
+	let playerCount = document.querySelector("input[type=radio][name=playerCount]:checked").value;
 	let reachViable = arrayReach[playerCount - 2];
 	let reachSum = 0;
 	arraySelected = [];
@@ -45,16 +45,35 @@ function rollFactions() {
 	if (reachSum <= reachViable) {
 		console.log('Reach too low; retrying...');
 		rollFactions();
+	} else {
+		drawFactions();
+		return;
 	}
+}
 
+function drawFactions() {
+	for(let ind = 0; ind < arraySelected.length - 1; ind++) {
+		// TODO: Draw factions function
+	}
+}
+
+function rollPlayers() {
 	for(let len = arraySelected.length - 1; len > 0; len--) {
 		const ind = Math.floor(Math.random() * (len + 1));
 		[arraySelected[len], arraySelected[ind]] = [arraySelected[ind], arraySelected[len]];
 	}
+	drawPlayers();
 
 	let n = 0;
 	while (n < arraySelected.length) {
 		console.log('Player ', n + 1, ': ', arraySelected[n].factionName)
 		n++
 	}
+}
+
+function drawPlayers() {
+	for(let ind = 0; ind < arraySelected.length - 1; ind++) {
+		// TODO: Draw players function
+	}
+
 }

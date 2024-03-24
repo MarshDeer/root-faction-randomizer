@@ -19,36 +19,115 @@
 	</head>
 
 	<body>
-		<h1> Root Faction Randomizer (WIP) </h1>
+		<header>
+			<img src="assets/logo.png">
+			<h1> Faction Randomizer </h1>
+		</header>
 
-		<section>
-			<h2> Amount of Players </h2>
-			<select id="playerCount">
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4" selected="selected">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-			</select>
-		</section>
+		<main>
+			<section class="paperborder" id="setup">
+				<h2> Setup </h2>
 
-		<section>
-			<h2> Expansions </h2>
-			<table>
-				<tr><td>base</td> <td><input type="checkbox" id="expansionBase" checked disabled> </td></tr>
-				<tr><td>river</td> <td><input type="checkbox" id="expansionRiverfolk" checked></td></tr>
-				<tr><td>underworld</td> <td><input type="checkbox" id="expansionUnderworld" checked></td></tr>
-				<tr><td>marauder</td> <td><input type="checkbox" id="expansionMarauder" checked> </td></tr>
-			</table>
-			<button onclick=rollFactions()>Roll</button>
-		</section>
+				<section class="border">
+					<h3> Player Count </h3>
+					<div id="playerSelector">
+						<label for="oneplayer">
+							<input type="radio" name="playerCount" value="1" id="oneplayer" disabled>
+							<img src="assets/meeple.png">
+							<span> 1 </span>
+						</label>
+						<label for="twoplayer">
+							<input type="radio" name="playerCount" value="2" id="twoplayer">
+							<img src="assets/meeple.png">
+							<span> 2 </span>
+						</label>
+						<label for="threeplayer">
+							<input type="radio" name="playerCount" value="3" id="threeplayer">
+							<img src="assets/meeple.png">
+							<span> 3 </span>
+						</label>
+						<label>
+							<input type="radio" name="playerCount" value="4" id="fourplayer" checked>
+							<img src="assets/meeple.png">
+							<span> 4 </span>
+						</label>
+						<label>
+							<input type="radio" name="playerCount" value="5" id="fiveplayer">
+							<img src="assets/meeple.png">
+							<span> 5 </span>
+						</label>
+						<label>
+							<input type="radio" name="playerCount" value="6" id="sixplayer">
+							<img src="assets/meeple.png">
+							<span> 6 </span>
+						</label>
+					</div>
+				</section>
 
-		<section>
-			<h2> Output </h2>
-			<p>
-				check the console!
-			</p>
-		</section>
+				<section class="border">
+					<h3> Expansions </h3>
+					<div id="expansionSelector">
+						<label for="expansionBase">
+							<input type="checkbox" id="expansionBase" checked disabled>
+							<img src="assets/expansions/basegame.png">
+							<span> Base <br> Game </span>
+						</label>
+						<label for="expansionRiverfolk">
+							<input type="checkbox" id="expansionRiverfolk" checked>
+							<img src="assets/expansions/riverfolk.png">
+							<span> The Riverfolk Expansion </span>
+						</label>
+						<label for="expansionUnderworld">
+							<input type="checkbox" id="expansionUnderworld" checked>
+							<img src="assets/expansions/underworld.png">
+							<span> The Underworld Expansion </span>
+						</label>
+						<label for="expansionMarauder">
+							<input type="checkbox" id="expansionMarauder" checked>
+							<img src="assets/expansions/marauder.png">
+							<span> The Marauder Expansion </span>
+						</label>
+					</div>
+				</section>
+			</section>
+
+			<section class="paperborder" id="output">
+				<h2> Output </h2>
+
+				<section class="border">
+					<h3> Selected Factions </h3>
+					<div id="selectedFactions">
+						<!-- JS OUTPUTS HERE -->
+					</div>
+					<button onclick=rollFactions()> Roll! </button>
+				</section>
+
+				<section class="border">
+					<h3> Player Assignments </h3>
+					<div id="assignedPlayers">
+						<!-- JS OUTPUTS HERE -->
+					</div>
+					<button onclick=rollAssignments()> Roll! </button>
+				</section>
+			</section>
+		</main>
+
+		<footer>
+			<section>
+				<a href="https://github.com/MarshDeer/root-faction-randomizer"> Source </a> - <a href="https://github.com/MarshDeer/root-faction-randomizer/issues/new"> Report Bug </a> - <a href="https://oql.avris.it/license?c=LensDeer%7Chttps%3A%2F%2Flensdeer.neocities.org"> License </a>
+			</section>
+
+			<section>
+				All assets © Leder Games.
+			</section>
+
+			<section>
+				<a href="https://marshdeer.github.io/root-faction-randomizer"><img src="assets/88x31.gif"></a>
+				<a href="https://lensdeer.neocities.org"><img src="https://lensdeer.neocities.org/globals/88x31.gif"></a>
+				<a href="https://marshdeer.github.io/howlongmojang"><img src="http://marshdeer.github.io/howlongmojang/img/button.gif"></a>
+			</section>
+
+		</footer>
 
 		<script src="calc.js"></script>
 	</body>
