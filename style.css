@@ -141,11 +141,6 @@
 		grid-template-rows: auto 1fr 1fr;
 	}
 
-		#output border {
-			display: grid;
-			grid-template-rows: auto 1fr auto;
-		}
-
 	#expansionSelector {
 		display: grid;
 		grid-template: 1fr 1fr / 1fr 1fr;
@@ -167,6 +162,7 @@
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		gap: 5px;
+		padding: 5px;
 	}
 
 		#playerSelector label:has(input:checked) ~ label img {
@@ -181,7 +177,8 @@
 	#assignedPlayers {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		width: 100%;
+		width: calc(100% - 20px);
+		padding: 10px;
 		align-content: end;
 	}
 
@@ -283,10 +280,14 @@
 		border: 1px solid #322;
 		border-radius: 3px;
 		margin: 10px 20px;
-		padding: 10px;
 		display: grid;
 		grid-template-rows: auto 1fr;
 	}
+
+		.border h3 {
+			color: var(--light);
+			background: var(--dark);
+		}
 
 	.card {
 		border-radius: 10px;
