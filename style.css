@@ -278,6 +278,7 @@
 
 	.border {
 		border: 1px solid #322;
+		background: #fae5b3;
 		border-radius: 3px;
 		margin: 10px 20px;
 		display: grid;
