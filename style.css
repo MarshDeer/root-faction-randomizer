@@ -142,6 +142,7 @@
 	}
 
 	#expansionSelector {
+		align-items: center;
 		display: grid;
 		grid-template: 1fr 1fr / 1fr 1fr;
 	}
