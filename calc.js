@@ -3,10 +3,11 @@ function fetchData() {
 		.then(response => response.json())
 		.then(data => {
 			arrayReach = data.viableReach;
-			console.log(arrayReach);
 			arrayExpansions = data.expansions;
-			console.log(arrayExpansions);
+			console.log("Fetch complete!");
+			document.getElementById("rollButton").innerHTML = "Roll!";
 		})
+		.then()
 }
 fetchData();
 
