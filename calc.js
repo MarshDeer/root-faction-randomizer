@@ -106,8 +106,7 @@ function drawPlayers() {
 		player.appendChild(playerLegend);
 		let playerMeeple = document.createElement('img');
 		playerMeeple.src = `assets/factions/${arraySelected[cursor].factionShortname}/meeple.png`;
-		playerMeeple.setAttribute('aria-hidden', 'true');
-		playerMeeple.alt = "";
+		playerMeeple.alt = arraySelected[cursor].factionName;
 		player.appendChild(playerMeeple);
 		area.appendChild(player);
 	}
