@@ -312,10 +312,6 @@
 			background-attachment: fixed;
 		}
 
-		#expansionSelector {
-			grid-template-columns: 1fr;
-		}
-
 		#selectedFactions,
 		#assignedPlayers {
 			grid-template: repeat(2, 1fr) / repeat(3, 1fr) !important;
@@ -328,6 +324,12 @@
 			#selectedFactions article {
 				height: 10vh !important;
 			}
+	}
+
+	@media screen and (min-width: 876px) and (max-width: 1000px) {
+		#expansionSelector {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	@media screen and (max-width: 875px) {
