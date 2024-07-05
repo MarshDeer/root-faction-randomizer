@@ -1,14 +1,4 @@
 /* Setup */
-	.marquise {--accent: #e07a37;}
-	.dynasties {--accent: #416eb0;}
-	.alliance {--accent: #68b653;}
-	.vagabond {--accent: #6d6e70;}
-	.cult {--accent: #fcf065;}
-	.company {--accent: #5bc3bd;}
-	.duchy {--accent: #eec4ab;}
-	.conspiracy {--accent: #925da5;}
-	.lord {--accent: #e11b3f;}
-	.keepers {--accent: #8b8d90;}
 	@font-face {font-family: 'Luminari'; src: local('Luminari'), url('assets/luminari.woff') format('woff');}
 	:root {--dark: #231f20; --light: #dce0df;}
 

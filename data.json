@@ -6,58 +6,68 @@
 			{
 				"factionName": "Marquise de Cat",
 				"factionReach": 10,
-				"factionShortname": "marquise"
+				"factionShortname": "marquise",
+				"factionColor": "#e07a37"
 			}
 			,{
 				"factionName": "Eyrie Dynasties",
 				"factionReach": 7,
-				"factionShortname": "dynasties"
+				"factionShortname": "dynasties",
+				"factionColor": "#416eb0"
 			}
 			,{
 				"factionName": "Woodland Alliance",
 				"factionReach": 3,
-				"factionShortname": "alliance"
+				"factionShortname": "alliance",
+				"factionColor": "#68b653"
 			}
 			,{
 				"factionName": "Vagabond",
 				"factionReach": 5,
-				"factionShortname": "vagabond"
+				"factionShortname": "vagabond",
+				"factionColor": "#6d6e70"
 			}
 		],
 		"expansionRiverfolk": [
 			{
 				"factionName": "Lizard Cult",
 				"factionReach": 2,
-				"factionShortname": "cult"
+				"factionShortname": "cult",
+				"factionColor": "#fcf065"
 			}
 			,{
 				"factionName": "Riverfolk Company",
 				"factionReach": 5,
-				"factionShortname": "company"
+				"factionShortname": "company",
+				"factionColor": "#5bc3bd"
 			}
 		],
 		"expansionUnderworld": [
 			{
 				"factionName": "Underground Duchy",
 				"factionReach": 8,
-				"factionShortname": "duchy"
+				"factionShortname": "duchy",
+				"factionColor": "#eec4ab"
 			}
 			,{
 				"factionName": "Corvid Conspiracy",
 				"factionReach": 3,
-				"factionShortname": "conspiracy"
+				"factionShortname": "conspiracy",
+				"factionColor": "#925da5"
 			}
 		],
 		"expansionMarauder": [
 			{
 				"factionName": "Lord of the Hundreds",
 				"factionReach": 9,
-				"factionShortname": "lord"
+				"factionShortname": "lord",
+				"factionColor": "#e11b3f"
 			}
 			,{
 				"factionName": "Keepers in Iron",
 				"factionReach": 8,
-				"factionShortname": "keepers"
+				"factionShortname": "keepers",
+				"factionColor": "#8b8d90"
 			}
 		]
 	}
