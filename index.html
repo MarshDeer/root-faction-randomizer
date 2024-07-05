@@ -28,8 +28,24 @@
 	</head>
 
 	<body>
+		<noscript>
+			<div class="overlay"></div>
+			<div class="noscript paper">
+				<h2> Critical error! </h2>
+				<section class="border">
+					<h3> JavaScript Required </h3>
+					<p>
+						This web app uses JavaScript to fetch faction data and to perform all of its calculations. It is completely unusable on browsers without Javascript support or with JS otherwise disabled.
+					</p>
+					<p>
+						Sorry!
+					</p>
+				</section>
+			</div>
+		</noscript>
+
 		<header>
-			<img src="assets/logo.png">
+			<img src="assets/logo.png" alt="Root">
 			<h1> Faction Randomizer </h1>
 		</header>
 
@@ -37,74 +53,73 @@
 			<section class="paper" id="setup">
 				<h2> Setup </h2>
 
-				<section class="border">
+				<fieldset class="border">
 					<h3> Player Count </h3>
 					<div id="playerSelector">
 						<label for="oneplayer">
-							<input type="radio" name="playerCount" value="1" id="oneplayer" disabled>
-							<img src="assets/meeple.png">
+							<input type="radio" name="playerCount" aria-label="1 player" value="1" id="oneplayer" disabled>
+							<img src="assets/meeple.png" aria-hidden=true alt="">
 							<span> 1 </span>
 						</label>
 						<label for="twoplayer">
-							<input type="radio" name="playerCount" value="2" id="twoplayer">
-							<img src="assets/meeple.png">
+							<input type="radio" name="playerCount" aria-label="2 players" value="2" id="twoplayer">
+							<img src="assets/meeple.png" aria-hidden=true alt="">
 							<span> 2 </span>
 						</label>
 						<label for="threeplayer">
-							<input type="radio" name="playerCount" value="3" id="threeplayer">
-							<img src="assets/meeple.png">
+							<input type="radio" name="playerCount" aria-label="3 players" value="3" id="threeplayer">
+							<img src="assets/meeple.png" aria-hidden=true alt="">
 							<span> 3 </span>
 						</label>
 						<label>
-							<input type="radio" name="playerCount" value="4" id="fourplayer" checked>
-							<img src="assets/meeple.png">
+							<input type="radio" name="playerCount" aria-label="4 players" value="4" id="fourplayer" checked>
+							<img src="assets/meeple.png" aria-hidden=true alt="">
 							<span> 4 </span>
 						</label>
 						<label>
-							<input type="radio" name="playerCount" value="5" id="fiveplayer">
-							<img src="assets/meeple.png">
+							<input type="radio" name="playerCount" aria-label="5 players" value="5" id="fiveplayer">
+							<img src="assets/meeple.png" aria-hidden=true alt="">
 							<span> 5 </span>
 						</label>
 						<label>
-							<input type="radio" name="playerCount" value="6" id="sixplayer">
-							<img src="assets/meeple.png">
+							<input type="radio" name="playerCount" aria-label="6 players" value="6" id="sixplayer">
+							<img src="assets/meeple.png" aria-hidden=true alt="">
 							<span> 6 </span>
 						</label>
 					</div>
-				</section>
+				</fieldset>
 
-				<section class="border">
+				<fieldset class="border">
 					<h3> Expansions </h3>
 					<div id="expansionSelector">
 						<label for="expansionBase">
 							<input type="checkbox" id="expansionBase" checked disabled>
-							<img src="assets/expansions/basegame.png">
+							<img src="assets/expansions/basegame.png" aria-hidden=true alt="">
 							<span> Base <br> Game </span>
 						</label>
 						<label for="expansionRiverfolk">
 							<input type="checkbox" id="expansionRiverfolk" checked>
-							<img src="assets/expansions/riverfolk.png">
+							<img src="assets/expansions/riverfolk.png" aria-hidden=true alt="">
 							<span> Riverfolk Expansion </span>
 						</label>
 						<label for="expansionUnderworld">
 							<input type="checkbox" id="expansionUnderworld" checked>
-							<img src="assets/expansions/underworld.png">
+							<img src="assets/expansions/underworld.png" aria-hidden=true alt="">
 							<span> Underworld Expansion </span>
 						</label>
 						<label for="expansionMarauder">
 							<input type="checkbox" id="expansionMarauder" checked>
-							<img src="assets/expansions/marauder.png">
+							<img src="assets/expansions/marauder.png" aria-hidden=true alt="">
 							<span> Marauder Expansion </span>
 						</label>
 					</div>
-				</section>
+				</fieldset>
 				<button id="rollButton" onclick="roll()"> Loading Data... </button>
 				<script src="calc.js"></script>
 			</section>
 
 			<section class="paper" id="output">
 				<h2> Output </h2>
-
 				<section class="border">
 					<h3> Selected Factions </h3>
 					<div id="selectedFactions">
@@ -136,21 +151,5 @@
 				<a href="https://marshdeer.github.io/howlongmojang"><img src="http://marshdeer.github.io/howlongmojang/img/button.gif"></a>
 			</section>
 		</footer>
-
-		<noscript>
-			<div class="overlay"></div>
-			<div class="noscript paper">
-				<h2> Critical error! </h2>
-				<section class="border">
-					<h3> JavaScript Required </h3>
-					<p>
-						This web app uses JavaScript to fetch faction data and to perform all of its calculations. It is completely unusable on browsers without Javascript support or with JS otherwise disabled.
-					</p>
-					<p>
-						Sorry!
-					</p>
-				</section>
-			</div>
-		</noscript>
 	</body>
 </html>

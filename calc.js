@@ -1,5 +1,5 @@
 function fetchData() {
-	fetch("data.json")
+	fetch("https://raw.githubusercontent.com/marshdeer/root-faction-randomizer/trunk/data.json")
 		.then(response => response.json())
 		.then(data => {
 			arrayReach = data.viableReach;
@@ -71,6 +71,8 @@ function drawFactions() {
 		card.style.setProperty("--accent", arraySelected[cursor].factionColor);
 		let cardImage = document.createElement('img');
 		cardImage.src = `assets/factions/${arraySelected[cursor].factionShortname}/leader.png`;
+		cardImage.setAttribute('aria-hidden', 'true');
+		cardImage.alt = "";
 		card.appendChild(cardImage);
 		let cardTitle = document.createElement('h4');
 		cardTitle.textContent = arraySelected[cursor].factionName;
@@ -104,6 +106,8 @@ function drawPlayers() {
 		player.appendChild(playerLegend);
 		let playerMeeple = document.createElement('img');
 		playerMeeple.src = `assets/factions/${arraySelected[cursor].factionShortname}/meeple.png`;
+		playerMeeple.setAttribute('aria-hidden', 'true');
+		playerMeeple.alt = "";
 		player.appendChild(playerMeeple);
 		area.appendChild(player);
 	}

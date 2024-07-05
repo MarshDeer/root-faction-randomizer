@@ -47,7 +47,7 @@
 		width: 100%;
 		height: 31px;
 		position: relative;
-		z-index: 1
+		z-index: 2;
 	}
 
 	footer a {
@@ -66,6 +66,11 @@
 		opacity: 0;
 		height: 0;
 		width: 0;
+	}
+
+	fieldset {
+		padding-block: 0;
+		padding-inline: 0;
 	}
 
 	label {
@@ -160,6 +165,7 @@
 
 		#playerSelector label:has(input:checked) ~ label img {
 			filter: sepia(1);
+			opacity: 0.7;
 		}
 
 		#playerSelector label:has(input:checked) ~ label:hover img {
@@ -275,6 +281,7 @@
 		top:50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		z-index: 1;
 	}
 
 		.noscript p {
@@ -289,6 +296,7 @@
 		left:0;
 		width:100vw;
 		height:100vh;
+		z-index: 1;
 	}
 
 	.border {
