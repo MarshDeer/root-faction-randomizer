@@ -98,7 +98,7 @@ function drawPlayers() {
 		player.classList.add(arraySelected[cursor].factionShortname);
 		player.style.setProperty("--i", animationDelay);
 		let playerLegend = document.createElement('h4');
-		playerLegend.textContent = "Player " + playerNumber;
+		playerLegend.textContent = `Player ${playerNumber}`;
 		player.appendChild(playerLegend);
 		let playerMeeple = document.createElement('img');
 		playerMeeple.src = `assets/factions/${arraySelected[cursor].factionShortname}/meeple.png`;
