@@ -60,16 +60,16 @@ function rollFactions() {
 
 function drawFactions() {
 	const area = document.getElementById("selectedFactions");
-	area.style.gridTemplateColumns = "repeat(" + arraySelected.length +", 1fr)";
+	area.style.gridTemplateColumns = `repeat(${arraySelected.length}, 1fr)`;
 	area.innerHTML = "";
 
 	for(let cursor = 0; cursor < arraySelected.length; cursor++) {
 		let card = document.createElement('article');
 		card.classList.add(arraySelected[cursor].factionShortname);
 		card.style.setProperty("--i", cursor);
-		card.style.setProperty("--background", "url(assets/factions/${arraySelected[cursor].factionShortname}/background.png");
+		card.style.setProperty("--background", `url(assets/factions/${arraySelected[cursor].factionShortname}/background.png`);
 		let cardImage = document.createElement('img');
-		cardImage.src = "assets/factions/" + arraySelected[cursor].factionShortname + "/leader.png";
+		cardImage.src = `assets/factions/${arraySelected[cursor].factionShortname}/leader.png`;
 		card.appendChild(cardImage);
 		let cardTitle = document.createElement('h4');
 		cardTitle.textContent = arraySelected[cursor].factionName;
@@ -87,7 +87,7 @@ function rollPlayers() {
 
 function drawPlayers() {
 	const area = document.getElementById("assignedPlayers");
-	area.style.gridTemplateColumns = "repeat(" + arraySelected.length +", 1fr)";
+	area.style.gridTemplateColumns = `repeat(${arraySelected.length}, 1fr)`;
 	area.innerHTML = "";
 	let playerNumber = 0;
 
@@ -101,7 +101,7 @@ function drawPlayers() {
 		playerLegend.textContent = "Player " + playerNumber;
 		player.appendChild(playerLegend);
 		let playerMeeple = document.createElement('img');
-		playerMeeple.src = "assets/factions/" + arraySelected[cursor].factionShortname + "/meeple.png";
+		playerMeeple.src = `assets/factions/${arraySelected[cursor].factionShortname}/meeple.png`;
 		player.appendChild(playerMeeple);
 		area.appendChild(player);
 	}
