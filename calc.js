@@ -67,6 +67,7 @@ function drawFactions() {
 		let card = document.createElement('article');
 		card.classList.add(arraySelected[cursor].factionShortname);
 		card.style.setProperty("--i", cursor);
+		card.style.setProperty("--background", "url(assets/factions/${arraySelected[cursor].factionShortname}/background.png");
 		let cardImage = document.createElement('img');
 		cardImage.src = "assets/factions/" + arraySelected[cursor].factionShortname + "/leader.png";
 		card.appendChild(cardImage);
