@@ -1,14 +1,14 @@
 /* Setup */
-	.marquise {--accent: #e07a37; --icon: url(assets/factions/marquise/leader.png); --background: url(assets/factions/marquise/background.png); --meeple: url(assets/factions/marquise/meeple.png);}
-	.dynasties {--accent: #416eb0; --icon: url(assets/factions/dynasties/leader.png); --background: url(assets/factions/dynasties/background.png); --meeple: url(assets/factions/dynasties/meeple.png);}
-	.alliance {--accent: #68b653; --icon: url(assets/factions/alliance/leader.png); --background: url(assets/factions/alliance/background.png); --meeple: url(assets/factions/alliance/meeple.png);}
-	.vagabond {--accent: #6d6e70; --icon: url(assets/factions/vagabond/leader.png); --background: url(assets/factions/vagabond/background.png); --meeple: url(assets/factions/vagabond/meeple.png);}
-	.cult {--accent: #fcf065; --icon: url(assets/factions/cult/leader.png); --background: url(assets/factions/cult/background.png); --meeple: url(assets/factions/cult/meeple.png);}
-	.company {--accent: #5bc3bd; --icon: url(assets/factions/company/leader.png); --background: url(assets/factions/company/background.png); --meeple: url(assets/factions/company/meeple.png);}
-	.duchy {--accent: #eec4ab; --icon: url(assets/factions/duchy/leader.png); --background: url(assets/factions/duchy/background.png); --meeple: url(assets/factions/duchy/meeple.png);}
-	.conspiracy {--accent: #925da5; --icon: url(assets/factions/conspiracy/leader.png); --background: url(assets/factions/conspiracy/background.png); --meeple: url(assets/factions/conspiracy/meeple.png);}
-	.lord {--accent: #e11b3f; --icon: url(assets/factions/lord/leader.png); --background: url(assets/factions/lord/background.png); --meeple: url(assets/factions/lord/meeple.png);}
-	.keepers {--accent: #8b8d90; --icon: url(assets/factions/keepers/leader.png); --background: url(assets/factions/keepers/background.png); --meeple: url(assets/factions/keepers/meeple.png);}
+	.marquise {--accent: #e07a37;}
+	.dynasties {--accent: #416eb0;}
+	.alliance {--accent: #68b653;}
+	.vagabond {--accent: #6d6e70;}
+	.cult {--accent: #fcf065;}
+	.company {--accent: #5bc3bd;}
+	.duchy {--accent: #eec4ab;}
+	.conspiracy {--accent: #925da5;}
+	.lord {--accent: #e11b3f;}
+	.keepers {--accent: #8b8d90;}
 	@font-face {font-family: 'Luminari'; src: local('Luminari'), url('assets/luminari.woff') format('woff');}
 	:root {--dark: #231f20; --light: #dce0df;}
 
@@ -290,12 +290,6 @@
 			color: var(--light);
 			background: var(--dark);
 		}
-
-	.card {
-		border-radius: 10px;
-		background: var(--background);
-		box-shadow: inset 0 0 10px black;
-	}
 
 /* Animations */
 	@keyframes fadein {
