@@ -98,6 +98,7 @@ function drawPlayers() {
 		let player = document.createElement('article');
 		player.classList.add(arraySelected[cursor].factionShortname);
 		player.style.setProperty("--i", animationDelay);
+		player.style.setProperty("--accent", arraySelected[cursor].factionColor);
 		let playerLegend = document.createElement('h4');
 		playerLegend.textContent = `Player ${playerNumber}`;
 		player.appendChild(playerLegend);
