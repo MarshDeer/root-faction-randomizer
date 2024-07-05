@@ -1,5 +1,5 @@
 function fetchData() {
-	fetch("https://raw.githubusercontent.com/MarshDeer/root-faction-randomizer/trunk/data.json")
+	fetch("data.json")
 		.then(response => response.json())
 		.then(data => {
 			arrayReach = data.viableReach;
