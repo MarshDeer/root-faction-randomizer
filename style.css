@@ -22,13 +22,13 @@
 		margin: 0;
 	}
 
-	hgroup {
+	header {
 		text-align: center;
 		color: var(--light);
 		filter: drop-shadow(0 0 10px var(--dark));
 	}
 
-		hgroup img {
+		header img {
 			max-height: 10vh;
 			max-width: 75vw;
 		}
